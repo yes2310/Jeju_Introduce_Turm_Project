@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>성산읍 구석구석</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+        <!-- Icons -->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+            crossorigin="anonymous"
+        />
+        <!-- Core CSS (includes Bootstrap) -->
+        <link rel="stylesheet" href="../css/styles.css" />
+        <!-- Google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet" />
+        <!-- Kakao Map API -->
+        <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=68ce7983ece74c2b864b4154546d1976"></script>
+    </head>
+    <body class="pt-5">
+        <!-- Navigation-->
+        <header>
+            <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+                <div class="container">
+                    <a class="navbar-brand js-scroll-trigger" href="../index.html">INTRODUCE JEJU</a>
+                    <button
+                        class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarResponsive"
+                        aria-controls="navbarResponsive"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        Menu
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item mx-0 mx-lg-1">
+                                <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#attraction">Attraction</a>
+                            </li>
+                            <li class="nav-item mx-0 mx-lg-1">
+                                <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#food">Food</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Carousel -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../images/Seongsan-eup/Seongsan_Ilchulbong.jpg" class="d-block w-100" alt="성산일출봉" />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>성산일출봉</h5>
+                        <p>유네스코 세계 자연유산으로 등재된 성산일출봉</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/Seongsan-eup/Bunker_of_Light.jpg" class="d-block w-100" alt="빛의 벙커" />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>빛의 벙커</h5>
+                        <p>비밀 벙커에서 세계적인 화가들의 작품을 담은 공간으로 바뀐 빛의 벙커</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/Seongsan-eup/Aquarium.jpg" class="d-block w-100" alt="아쿠아플라넷 제주" />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>아쿠아플라넷 제주</h5>
+                        <p>아시아 최대 규모를 자랑하는 아쿠아플라넷 제주</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- Attraction Section -->
+        <section class="container section" id="attraction">
+            <div class="row" style="margin-top: 2em" data-aos="fade-left" data-aos-duration="1500">
+                <div class="col-12 col-sm-7 col-md-7 col-lg-7">
+                    <h2>성산일출봉</h2>
+                    <p class="fs-5">
+                        성산일출봉은 유네스코 세계 자연유산으로 등재돼있으면서 제주도를 대표하는 일출봉 중에 하나입니다.<br /><br />
+                        등산보다는 산책에 가까운 난이도로 정상까지는 20분이면 올라갈 수 있습니다.<br /><br />
+                        입장료가 있다는 점에서 아쉬울 수 있지만 그만큼 잘 관리되고 코스 또한 잘 짜여있어 편하고 즐겁게 올라갈 수 있습니다.<br /><br />
+                        올라가다 보면 말도 볼 수 있고 정상까지 올라가면 제주가 한눈에 보이고 시원하여 스트레스를 한 번에 날려버릴 수 있습니다.<br /><br />
+                        한라산은 올라가기 좀 부담스럽지만 높은 곳에서 한눈에 보고 싶은 사람에게 추천합니다.
+                    </p>
+                </div>
+                <div class="col-12 col-sm-5 col-md-5 col-lg-5">
+                    <img src="../images/Seongsan-eup/Seongsan_Ilchulbong_divider.jpeg" alt="성산일출봉" class="w-100 rounded my-3 mx-auto" />
+                </div>
+            </div>
+            <hr />
+            <div class="row" data-aos="fade-right" data-aos-duration="1500">
+                <div class="col-12 col-sm-5 col-md-5 col-lg-5">
+                    <img src="../images/Seongsan-eup/Bunker_of_Light_divider.jpg" alt="빛의 벙커" class="w-100 rounded my-3 mx-auto" />
+                </div>
+                <div class="col-12 col-sm-7 col-md-7 col-lg-7">
+                    <h2>빛의 벙커</h2>
+                    <p class="fs-5">
+                        빛의 벙커는 최근에 많이 알려진 관광지입니다.<br /><br />
+                        빛의 벙커의 이름에 왜 벙커가 들어갔는지 궁금하지 않나요?<br /><br />
+                        원래 빛의 벙커는 국가 기간 통신시설로 사용된 비밀 벙커였다고 합니다.<br /><br />
+                        삭막하고 조용했던 공간이 세계적인 화가들의 작품을 가득 담고 있는 공간으로 변했다는 것이 개인적으로는 참 놀라웠습니다.<br /><br />
+                        계절에 상관없이 아무 때나 와도 좋고 춥거나 비 오는 날 등등 야외활동이 힘들 때 방문하면 더할 나위 없이 좋은 선택이 될 수 있을 것 같습니다.
+                    </p>
+                </div>
+            </div>
+            <hr />
+            <div class="row" data-aos="fade-left" data-aos-duration="1500">
+                <div class="col-12 col-sm-7 col-md-7 col-lg-7">
+                    <h2>아쿠아플라넷 제주</h2>
+                    <p class="fs-5">
+                        아쿠아플라넷 제주는 아시아 최대 규모를 자랑하는 아쿠아리움입니다.<br /><br />
+                        어느 정도 크기냐면 63빌딩에 있는 아쿠아리움인 씨월드의 약 11배의 크기입니다.<br /><br />
+                        단순히 넓기만 한 게 아니라 테마 구분이 확실하고 구성이 알차게 돼있어서 관찰하는 걸 좋아하시는 분은 아주 만족하실 겁니다.<br /><br />
+                        또한 수중 뮤지컬도 진행하고 있는데 중간중간 볼거리가 다양하기 때문에 수중동물 관찰에 흥미가 없으신 분들도 재미있게 즐기실 수 있습니다.<br /><br />
+                    </p>
+                </div>
+                <div class="col-12 col-sm-5 col-md-5 col-lg-5">
+                    <img src="../images/Seongsan-eup/Aquarium_divider.jpg" alt="아쿠아플라넷 제주" class="w-100 rounded my-3 mx-auto" />
+                </div>
+            </div>
+        </section>
+        <!-- Food Section -->
+        <section class="container section" id="food">
+            <hr />
+            <div class="row" data-aos="fade-right" data-aos-duration="1500">
+                <div class="col-12 col-sm-5 col-md-5 col-lg-5">
+                    <img src="../images/Seongsan-eup/Dumun_Pogalfish_divider.jpg" alt="네거리식당" class="w-100 rounded my-3 mx-auto" />
+                </div>
+                <div class="col-12 col-sm-7 col-md-7 col-lg-7">
+                    <h2>두문포갈치</h2>
+                    <p class="fs-5">
+                        제주도에서 꼭 한 번은 먹어야 되는 갈치! 하지만 성산일출봉 근처는 가격이 너무 비쌉니다.<br /><br />
+                        차를 타고 좀 이동해서 여기에서 먹는 걸 추천합니다.<br /><br />
+                        친구네 어머님이 운영하시는 식당이지만 제주 백종원으로서 객관적으로 맛과 가격 모두 훌륭합니다.<br /><br />
+                        갈치 가게에서는 거의 안되는 1인 식사도 가능합니다.<br /><br />
+                        주소 : 제주특별자치도 제주시 구좌읍 해맞이해안로 2286
+                    </p>
+                </div>
+            </div>
+            <hr />
+        </section>
+        <!-- Back To Top Button -->
+        <button type="button" class="btn btn-light btn-floating btn-lg" id="btn-back-to-top">
+            <i class="fa fa-chevron-up"></i>
+        </button>
+        <!-- Footer -->
+        <footer class="container">
+            <div class="text-center">
+                <p>&copy; 2021. 양은수 all rights reserved.</p>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+        <!-- Core famous JS-->
+        <script src="../js/scripts.js"></script>
+        <!-- Scroll Animation JS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <!-- Top Button JS -->
+        <script>
+            let mybutton = document.getElementById("btn-back-to-top");
+            window.onscroll = function () {
+                scrollFunction();
+            };
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+            mybutton.addEventListener("click", backToTop);
+            function backToTop() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+    </body>
+</html>

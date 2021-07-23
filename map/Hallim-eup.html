@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>한림읍 구석구석</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+        <!-- Icons -->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+            crossorigin="anonymous"
+        />
+        <!-- Core CSS (includes Bootstrap) -->
+        <link rel="stylesheet" href="../css/styles.css" />
+        <!-- Google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet" />
+        <!-- Kakao Map API -->
+        <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=68ce7983ece74c2b864b4154546d1976"></script>
+    </head>
+    <body class="pt-5">
+        <!-- Navigation-->
+        <header>
+            <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+                <div class="container">
+                    <a class="navbar-brand js-scroll-trigger" href="../index.html">INTRODUCE JEJU</a>
+                    <button
+                        class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarResponsive"
+                        aria-controls="navbarResponsive"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        Menu
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item mx-0 mx-lg-1">
+                                <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#attraction">Attraction</a>
+                            </li>
+                            <li class="nav-item mx-0 mx-lg-1">
+                                <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#food">Food</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Carousel -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../images/Hallim-eup/Hyeopjae_Beach.jpg" class="d-block w-100" alt="협재해수욕장" />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>협재해수욕장</h5>
+                        <p>제주도에서 가장 유명한 바다인 협재해수욕장</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/Hallim-eup/Ranch.jpg" class="d-block w-100" alt="성이시돌목장" />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>성이시돌목장</h5>
+                        <p>우리나라에서 유일하게 테쉬폰을 볼 수 있는 곳인 성이시돌목장</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/Hallim-eup/Hallym_Park.jpg" class="d-block w-100" alt="한림공원" />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>한림공원</h5>
+                        <p>다양한 테마파크가 준비된 한림공원</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- Attraction Section -->
+        <section class="container section" id="attraction">
+            <div class="row" style="margin-top: 2em" data-aos="fade-left" data-aos-duration="1500">
+                <div class="col-12 col-sm-7 col-md-7 col-lg-7">
+                    <h2>협재해수욕장</h2>
+                    <p class="fs-5">
+                        제주에서 가장 아름답다고 손꼽히는 해수욕장인 협재해수욕장에 대해서 소개해드리겠습니다.<br /><br />
+                        협재해수욕장은 투명하고 맑은 물과 흰모래가 섞여 길게 이어진 아름다운 백사장이 특징인 곳입니다.<br /><br />
+                        규모는 200m 정도로 큰 편은 아니지만 워낙 매력적인 곳이기에 인기가 매우 많은 곳입니다.<br /><br />
+                        협재해수욕장의 모래는 다른 제주의 백사장과는 달리 새하얀 은빛을 띄고 있습니다.<br /><br />
+                        수심이 앝고 경사가 매우 완만해 어린아이와 함께 와도 안전하게 놀 수 있습니다.
+                    </p>
+                </div>
+                <div class="col-12 col-sm-5 col-md-5 col-lg-5">
+                    <div id="roadview" style="width: 20em; height: 20em" class="my-5 mx-auto"></div>
+                    <script>
+                        var roadviewContainer = document.getElementById("roadview"); //로드뷰를 표시할 div
+                        var roadview = new kakao.maps.Roadview(roadviewContainer); //로드뷰 객체
+                        var roadviewClient = new kakao.maps.RoadviewClient(); //좌표로부터 로드뷰 파노ID를 가져올 로드뷰 helper객체
+
+                        var position = new kakao.maps.LatLng(33.39423427825302, 126.23980352330554);
+
+                        // 특정 위치의 좌표와 가까운 로드뷰의 panoId를 추출하여 로드뷰를 띄운다.
+                        roadviewClient.getNearestPanoId(position, 50, function (panoId) {
+                            roadview.setPanoId(panoId, position); //panoId와 중심좌표를 통해 로드뷰 실행
+                        });
+                    </script>
+                </div>
+            </div>
+            <hr />
+            <div class="row" data-aos="fade-right" data-aos-duration="1500">
+                <div class="col-12 col-sm-5 col-md-5 col-lg-5">
+                    <img src="../images/Hallim-eup/Ranch_divider.jpg" alt="성이시돌목장" class="w-100 rounded my-3 mx-auto" />
+                </div>
+                <div class="col-12 col-sm-7 col-md-7 col-lg-7">
+                    <h2>성이시돌목장</h2>
+                    <p class="fs-5">
+                        성이시돌목장은 아름다운 경관과 독특한 건축물인 테쉬폰을 볼 수 있는 곳입니다.<br /><br />
+                        테쉬폰은 이라크의 건축양식인데 우리나라에선 성이시돌목장에서 유일하게 볼 수 있습니다.<br /><br />
+                        또한 성이시돌목장에서는 바로 눈앞에서 젖소를 볼 수 있습니다.<br /><br />
+                        울타리 밖으로 사람이 있거나 말거나 여유롭게 들판을 노닐며 풀을 뜯고 있는 장면을 보면 정말 꿈만 같습니다.<br /><br />
+                        그리고 이 젖소들로부터 나온 우유도 구매할 수 있으니 구매해 보시는 것을 추천드립니다.
+                    </p>
+                </div>
+            </div>
+            <hr />
+            <div class="row" data-aos="fade-left" data-aos-duration="1500">
+                <div class="col-12 col-sm-7 col-md-7 col-lg-7">
+                    <h2>한림공원</h2>
+                    <p class="fs-5">
+                        한림공원은 9개의 테마파크가 있는 관광명소로 전 중국 총리와 전 일본 총리 등 세계 유명 인사가 방문했던 곳입니다.<br /><br />
+                        야자수 길은 나무들이 높이 솟아있어 신비로운 느낌을 주고 적당한 습도를 유지해 주어 산책하는 데 도움을 줍니다.<br /><br />
+                        또한 용암동굴도 있는데 여기서는 천장과 벽면에 석회수가 스며들어 용암동굴과 석회동굴의 특징을 한눈에 확인할 수 있습니다.<br /><br />
+                        중간에 정자도 있으니 쉬어가면서 주변 식물을 둘러보기에도 좋습니다.<br /><br />
+                        2시간 정도면 공원을 보두 둘러볼 수 있기 때문에 부담스럽지 않게 구경하실 수 있습니다.
+                    </p>
+                </div>
+                <div class="col-12 col-sm-5 col-md-5 col-lg-5">
+                    <img src="../images/Hallim-eup/Hallym Park_divider.jpg" alt="한림공원" class="w-100 rounded my-3 mx-auto" />
+                </div>
+            </div>
+        </section>
+        <!-- Food Section -->
+        <section class="container section" id="food">
+            <hr />
+            <div class="row" data-aos="fade-right" data-aos-duration="1500">
+                <div class="col-12 col-sm-5 col-md-5 col-lg-5">
+                    <img src="../images/Hallim-eup/Samil_Restaurant_divider.jpg" alt="삼일식당" class="w-100 rounded my-3 mx-auto" />
+                </div>
+                <div class="col-12 col-sm-7 col-md-7 col-lg-7">
+                    <h2>삼일식당</h2>
+                    <p class="fs-5">
+                        30년 전통을 자랑하는 삼일식당을 소개해드리겠습니다.<br /><br />
+                        이 집의 메뉴는 딱 2가지로 해장국과 내장탕이 있습니다.<br /><br />
+                        개인적으로는 해장국을 더 추천드립니다.<br /><br />
+                        반찬은 딱 세 가지가 나오는데 깔끔하고 위생적으로 나와서 만족하실 수 있을 겁니다.<br /><br />
+                        선지도 많고 고기도 많은데 이 집의 진가는 국물을 먹어보면 알 수 있습니다.<br /><br />
+                        주소 : 제주특별자치도 제주시 한림읍 한림상로 92
+                    </p>
+                </div>
+            </div>
+            <hr />
+        </section>
+        <!-- Back To Top Button -->
+        <button type="button" class="btn btn-light btn-floating btn-lg" id="btn-back-to-top">
+            <i class="fa fa-chevron-up"></i>
+        </button>
+        <!-- Footer -->
+        <footer class="container">
+            <div class="text-center">
+                <p>&copy; 2021. 양은수 all rights reserved.</p>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+        <!-- Core famous JS-->
+        <script src="../js/scripts.js"></script>
+        <!-- Scroll Animation JS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <!-- Top Button JS -->
+        <script>
+            let mybutton = document.getElementById("btn-back-to-top");
+            window.onscroll = function () {
+                scrollFunction();
+            };
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+            mybutton.addEventListener("click", backToTop);
+            function backToTop() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+    </body>
+</html>

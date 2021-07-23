@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>남원읍 구석구석</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+        <!-- Icons -->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+            crossorigin="anonymous"
+        />
+        <!-- Core CSS (includes Bootstrap) -->
+        <link rel="stylesheet" href="../css/styles.css" />
+        <!-- Google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet" />
+        <!-- Kakao Map API -->
+        <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=68ce7983ece74c2b864b4154546d1976"></script>
+    </head>
+    <body class="pt-5">
+        <!-- Navigation-->
+        <header>
+            <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+                <div class="container">
+                    <a class="navbar-brand js-scroll-trigger" href="../index.html">INTRODUCE JEJU</a>
+                    <button
+                        class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarResponsive"
+                        aria-controls="navbarResponsive"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        Menu
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item mx-0 mx-lg-1">
+                                <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#attraction">Attraction</a>
+                            </li>
+                            <li class="nav-item mx-0 mx-lg-1">
+                                <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#food">Food</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Carousel -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../images/Namwon-eup/Huari_Natural_Life Park.jpg" class="d-block w-100" alt="휴애리자연생활공원" />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>휴애리자연생활공원</h5>
+                        <p>여러 가지 체험을 함께할 수 있는 휴애리자연생활공원</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/Namwon-eup/Camellia_Forest.jpg" class="d-block w-100" alt="동백포레스트" />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>동백포레스트</h5>
+                        <p>인스타그램 감성으로 찰칵! 동백포레스트</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/Namwon-eup/Soesokkak.jpg" class="d-block w-100" alt="쇠소깍" />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>쇠소깍</h5>
+                        <p>투명 카약을 즐길 수 있는 계곡 쇠소깍</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- Attraction Section -->
+        <section class="container section" id="attraction">
+            <div class="row" style="margin-top: 2em" data-aos="fade-left" data-aos-duration="1500">
+                <div class="col-12 col-sm-7 col-md-7 col-lg-7">
+                    <h2>휴애리자연생활공원</h2>
+                    <p class="fs-5">
+                        휴애리자연생활공원은 한라산 자락에 있는 자연생활 체험공원입니다.<br /><br />
+                        8월에서 9월에는 제주를 대표하는 계절 체험으로 감귤 체험이 있습니다.<br /><br />
+                        또한 사진 찍기 좋게 꾸며진 포토존이 많아서 인생 사진을 남기기에도 좋습니다.<br /><br />
+                        또한 휴애리 대표 축제로는 2월 ~ 3월 제주에서 봄을 가장 먼저 알리는 매화축제를 시작으로 4월 ~ 7월까지 공원 곳곳에서 수국과 산수국을 함께 볼 수 있는 수국축제 9월 ~ 11월까지 가을
+                        제주를 찾는 사람들에게 핑크 핑크 한 제주를 선물하는 핑크 뮬리 축제 11월 ~ 1월까지 겨울 제주를 대표하는 동백 축제가 열리는 등 다양한 볼거리를 제공합니다.
+                    </p>
+                </div>
+                <div class="col-12 col-sm-5 col-md-5 col-lg-5">
+                    <img src="../images/Namwon-eup/Huari_Natural_Life Park_divider.jpg" alt="휴애리자연생활공원" class="w-100 rounded my-3 mx-auto" />
+                </div>
+            </div>
+            <hr />
+            <div class="row" data-aos="fade-right" data-aos-duration="1500">
+                <div class="col-12 col-sm-5 col-md-5 col-lg-5">
+                    <img src="../images/Namwon-eup/Camellia_Forest_divider.jpg" alt="동백포레스트" class="w-100 rounded my-3 mx-auto" />
+                </div>
+                <div class="col-12 col-sm-7 col-md-7 col-lg-7">
+                    <h2>동백포레스트</h2>
+                    <p class="fs-5">
+                        휴애리자연생활공원과 더불어 제주에서 대표적으로 동백꽃을 볼 수 있는 동백포레스트를 소개합니다.<br /><br />
+                        동백프레스트에 가게 된다면 사람이 많아지기 전에 실내부터 들어가서 사진을 찍고 옥상으로 올라가서 전체를 살펴보시는 것을 추천드립니다.<br /><br />
+                        그리고 실내에는 예쁜 포토존이 많이 있어서 사진 찍기에도 좋습니다.<br /><br />
+                        개인적으로 창문처럼 생긴 액자 포토존이 있는데 여기가 제일 만족스러운 포토존이었습니다.<br /><br />
+                        실내를 다 구경하셨다면 실외에서 산책로를 따라서 걸으면서 구경하시면 되는데 꽉꽉 차있는 동백꽃을 보면 정말 마음이 편해집니다.
+                    </p>
+                </div>
+            </div>
+            <hr />
+            <div class="row" data-aos="fade-left" data-aos-duration="1500">
+                <div class="col-12 col-sm-7 col-md-7 col-lg-7">
+                    <h2>쇠소깍</h2>
+                    <p class="fs-5">
+                        쇠소깍에서 "쇠도"는 소가 누워있는 모습의 연못이라는 뜻이고 "깍"은 마지막 끝을 의미합니다.<br /><br />
+                        쇠소깍은 한라산에서 흘러내려온 물줄기로 이루어진 곳입니다.<br /><br />
+                        쇠소깍은 양쪽이 병풍 같은 벽에 둘러싸여 있고 그 위로는 숲이 우거져있어 신비한 계곡에 온듯한 기분을 느낄 수 있습니다.<br /><br />
+                        그리고 여기서 투명 카약을 탈 수 있는데 물밑에도 볼 수 있어서 신기하고 재미있는 추억을 쌓을 수 있습니다.<br /><br />
+                        7월에서 8월 사이에는 쇠소깍 축제가 열려 맨손 고기 잡기, 다우렁길 걷기 등의 다양한 행사도 체험할 수 있습니다.
+                    </p>
+                </div>
+                <div class="col-12 col-sm-5 col-md-5 col-lg-5">
+                    <img src="../images/Namwon-eup/Soesokkak_divider.jpg" alt="쇠소깍" class="w-100 rounded my-3 mx-auto" />
+                </div>
+            </div>
+        </section>
+        <!-- Food Section -->
+        <section class="container section" id="food">
+            <hr />
+            <div class="row" data-aos="fade-right" data-aos-duration="1500">
+                <div class="col-12 col-sm-5 col-md-5 col-lg-5">
+                    <img src="../images/Namwon-eup/Miss_Jeju_divider.jpg" alt="그리울땐제주" class="w-100 rounded my-3 mx-auto" />
+                </div>
+                <div class="col-12 col-sm-7 col-md-7 col-lg-7">
+                    <h2>그리울땐제주</h2>
+                    <p class="fs-5">
+                        그리울땐제주는 바다 바로 앞에 위치한 카페입니다.<br /><br />
+                        카페 바로 앞에 누울 수 있는 빨간 소파가 있는 것이 특징인데 이 소파에서 음료와 디저트를 먹으면서 바다를 보면 정말 세상 행복해집니다.<br /><br />
+                        세트메뉴로 아메리카노, 수제 당근 케이트, 수제 요거트를 판매하는데 세트메뉴로 다양한 메뉴를 즐겨보시는 걸 추천드립니다.<br /><br />
+                        수제 요거트에는 블루베리랑 한라봉청이 들어가 있는데 보기도 좋고 맛도 좋으니 강력 추천드립니다.<br /><br />
+                        주소 : 제주특별자치도 서귀포시 남원읍 태신해안로 271 1층
+                    </p>
+                </div>
+            </div>
+            <hr />
+        </section>
+        <!-- Back To Top Button -->
+        <button type="button" class="btn btn-light btn-floating btn-lg" id="btn-back-to-top">
+            <i class="fa fa-chevron-up"></i>
+        </button>
+        <!-- Footer -->
+        <footer class="container">
+            <div class="text-center">
+                <p>&copy; 2021. 양은수 all rights reserved.</p>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+        <!-- Core famous JS-->
+        <script src="../js/scripts.js"></script>
+        <!-- Scroll Animation JS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <!-- Top Button JS -->
+        <script>
+            let mybutton = document.getElementById("btn-back-to-top");
+            window.onscroll = function () {
+                scrollFunction();
+            };
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+            mybutton.addEventListener("click", backToTop);
+            function backToTop() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+    </body>
+</html>

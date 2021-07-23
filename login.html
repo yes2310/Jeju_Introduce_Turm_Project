@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Log In</title>
+        <style>
+            input[type="text"]:focus,
+            input[type="password"]:focus {
+                font-size: 120%;
+                background-color: aliceblue;
+            }
+
+            * {
+                margin: 0px;
+                padding: 0px;
+                text-decoration: none;
+                font-family: sans-serif;
+            }
+
+            body {
+                background-image: #34495e;
+            }
+
+            .loginForm {
+                position: absolute;
+                width: 300px;
+                height: 400px;
+                padding: 30px, 20px;
+                background-color: #ffffff;
+                text-align: center;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                border-radius: 15px;
+            }
+
+            .loginForm h2 {
+                text-align: center;
+                margin: 30px;
+            }
+
+            .idForm {
+                border-bottom: 2px solid #adadad;
+                margin: 30px;
+                padding: 10px 10px;
+            }
+
+            .passForm {
+                border-bottom: 2px solid #adadad;
+                margin: 30px;
+                padding: 10px 10px;
+            }
+
+            .id {
+                width: 100%;
+                border: none;
+                outline: none;
+                color: #636e72;
+                font-size: 16px;
+                height: 25px;
+                background: none;
+            }
+
+            .pw {
+                width: 100%;
+                border: none;
+                outline: none;
+                color: #636e72;
+                font-size: 16px;
+                height: 25px;
+                background: none;
+            }
+
+            .btn {
+                position: relative;
+                left: 40%;
+                transform: translateX(-50%);
+                margin-bottom: 40px;
+                width: 80%;
+                height: 40px;
+                background: linear-gradient(125deg, #81ecec, #6c5ce7, #81ecec);
+                background-position: left;
+                background-size: 200%;
+                color: white;
+                font-weight: bold;
+                border: none;
+                cursor: pointer;
+                transition: 0.4s;
+                display: inline;
+            }
+
+            .btn:hover {
+                background-position: right;
+            }
+
+            .bottomText {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body style="background-color: #eeffee; background-size: 100px 100px; background-image: url(images/gucci.png); background-repeat: repeat-y; background-position: center center">
+        <div class="loginForm">
+            <h2>Login</h2>
+            <form id="idform" class="idForm">
+                <input type="text" class="id" placeholder="ID" id="id_" name="id" />
+            </form>
+            <form id="passform" class="passForm">
+                <input type="password" class="pw" placeholder="PW" id="pass_" name="pass" />
+            </form>
+            <button id="submit" class="btn" style="margin-top: 3em">LOG IN</button>
+        </div>
+        <script src="js/login.js"></script>
+    </body>
+</html>

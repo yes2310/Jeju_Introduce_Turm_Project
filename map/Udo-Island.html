@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>우도 구석구석</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+        <!-- Icons -->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+            crossorigin="anonymous"
+        />
+        <!-- Core CSS (includes Bootstrap) -->
+        <link rel="stylesheet" href="../css/styles.css" />
+        <!-- Google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet" />
+        <!-- Kakao Map API -->
+        <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=68ce7983ece74c2b864b4154546d1976"></script>
+    </head>
+    <body class="pt-5">
+        <!-- Navigation-->
+        <header>
+            <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+                <div class="container">
+                    <a class="navbar-brand js-scroll-trigger" href="../index.html">INTRODUCE JEJU</a>
+                    <button
+                        class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarResponsive"
+                        aria-controls="navbarResponsive"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        Menu
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item mx-0 mx-lg-1">
+                                <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#attraction">Attraction</a>
+                            </li>
+                            <li class="nav-item mx-0 mx-lg-1">
+                                <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#food">Food</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Carousel -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../images/Udo-Island/Udo_Entrance.jpg" class="d-block w-100" alt="우도 입구" />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>우도 입구</h5>
+                        <p>가슴이 웅장해지는 "WELCOME TO BEAUTIFUL U-DO"</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/Udo-Island/Hagosudong_Beach.jpg" class="d-block w-100" alt="하고수동해변" />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>하고수동해변</h5>
+                        <p>여름철 밤에 특히 아름다운 하고수동해변</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/Udo-Island/Udo_Lighthous.jpg" class="d-block w-100" alt="우도등대" />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>우도등대</h5>
+                        <p>제주 최초의 등대인 우도등대</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- Attraction Section -->
+        <section class="container section" id="attraction">
+            <div class="row" style="margin-top: 2em" data-aos="fade-left" data-aos-duration="1500">
+                <div class="col-12 col-sm-7 col-md-7 col-lg-7">
+                    <h2>우도 꿀팁</h2>
+                    <p class="fs-5">
+                        이번 페이지에서는 특별하게 우도를 여행하는 꿀팁에 대해서 알려드리겠습니다.<br /><br />
+                        우도를 여행할 때는 다양한 이동 수단을 활용할 수 있는데 그중에서 전기자전거에 대해서 소개해드리겠습니다.<br /><br />
+                        우선 전기자전거는 면허가 없어도 운전 가능하고 살짝만 밟아도 전기 힘으로 움직이기 때문에 편하게 이동할 수 있습니다.<br /><br />
+                        또한 차로는 진입 못하는 도로에도 자전거는 진입 가능하기 때문에 오히려 좋은 경우도 많습니다.<br /><br />
+                        인터넷으로 미리 예약해서 가면 좀 더 저렴하게 이용할 수 있으므로 사전에 인터넷으로 예약을 추천드립니다.
+                    </p>
+                </div>
+                <div class="col-12 col-sm-5 col-md-5 col-lg-5">
+                    <img src="../images/Udo-Island/Udo_Entrance_divider.jpg" alt="우도 꿀팁" class="w-100 rounded my-3 mx-auto" />
+                </div>
+            </div>
+            <hr />
+            <div class="row" data-aos="fade-right" data-aos-duration="1500">
+                <div class="col-12 col-sm-5 col-md-5 col-lg-5">
+                    <div id="roadview" style="width: 20em; height: 20em" class="my-5 mx-auto"></div>
+                    <script>
+                        var roadviewContainer = document.getElementById("roadview"); //로드뷰를 표시할 div
+                        var roadview = new kakao.maps.Roadview(roadviewContainer); //로드뷰 객체
+                        var roadviewClient = new kakao.maps.RoadviewClient(); //좌표로부터 로드뷰 파노ID를 가져올 로드뷰 helper객체
+
+                        var position = new kakao.maps.LatLng(33.51453565894413, 126.95729063021106);
+
+                        // 특정 위치의 좌표와 가까운 로드뷰의 panoId를 추출하여 로드뷰를 띄운다.
+                        roadviewClient.getNearestPanoId(position, 50, function (panoId) {
+                            roadview.setPanoId(panoId, position); //panoId와 중심좌표를 통해 로드뷰 실행
+                        });
+                    </script>
+                </div>
+                <div class="col-12 col-sm-7 col-md-7 col-lg-7">
+                    <h2>하고수동해변</h2>
+                    <p class="fs-5">
+                        일명 "사이판 해변"으로 불리는 푸른빛의 아름다운 해변 하고수동해변입니다.<br /><br />
+                        하고수동해변은 모래가 밀가루처럼 부드럽고 수심이 앝아 가족단위로 수영을 즐기기에 좋습니다.<br /><br />
+                        또한 여름밤에는 멸치잡이배들의 휘황찬란한 불빛들 덕분에 마치 불꽃놀이를 보는듯한 기분을 느낄 수 있습니다.<br /><br />
+                        그리고 해변 중앙에 동상이 있는데 이 동상은 70세의 해녀분을 모티브로 한 동상이고 이 동상을 통해서 물이 어느 정도 찼는지 알 수 있습니다.
+                    </p>
+                </div>
+            </div>
+            <hr />
+            <div class="row" data-aos="fade-left" data-aos-duration="1500">
+                <div class="col-12 col-sm-7 col-md-7 col-lg-7">
+                    <h2>우도등대</h2>
+                    <p class="fs-5">
+                        제주의 첫 등대인 우도등대에 대해서 소개해드리겠습니다.<br /><br />
+                        사실 우도등대는 러일전쟁을 일으킨 일본이 원활한 군수물자 수송을 위해서 만든 간이시설인 등간으로 시작되었습니다.<br /><br />
+                        이 등간은 전쟁이 끝난 후 영구시설인 등대로 바뀌였고 2003년에 지금의 모습으로 재건립되었습니다.<br /><br />
+                        더 자세한 설명을 원하시는 분은 등대 근처에 우도등대공원이라는 곳에서 사진과 함께 자세한 설명을 볼 수 있습니다.<br /><br />
+                        역사적인 의미 말고도 분위기가 좋고 풍경이 좋아 사진만 찍더라도 충분히 만족하실 수 있는 장소라고 생각됩니다.
+                    </p>
+                </div>
+                <div class="col-12 col-sm-5 col-md-5 col-lg-5">
+                    <img src="../images/Udo-Island/Udo_Lighthous_divider.jpg" alt="우도등대" class="w-100 rounded my-3 mx-auto" />
+                </div>
+            </div>
+        </section>
+        <!-- Food Section -->
+        <section class="container section" id="food">
+            <hr />
+            <div class="row" data-aos="fade-right" data-aos-duration="1500">
+                <div class="col-12 col-sm-5 col-md-5 col-lg-5">
+                    <img src="../images/Udo-Island/Udo_Ice_Cream_divider.jpg" alt="잔디가미" class="w-100 rounded my-3 mx-auto" />
+                </div>
+                <div class="col-12 col-sm-7 col-md-7 col-lg-7">
+                    <h2>잔디가미</h2>
+                    <p class="fs-5">
+                        우도하면 땅콩 아이스크림이 생각나시는 분들이 많으실 겁니다.<br /><br />
+                        이곳 잔디가 미는 우도 땅콩 아이스크림의 특허 원조집입니다.<br /><br />
+                        다른 집처럼 단순히 땅콩을 아이스크림 위에만 올리는 것이 아니라 땅콩을 발효시켜 아이스크림을 만들어내서 진짜 땅콩 아이스크림을 맛볼 수 있습니다.<br /><br />
+                        이곳 말고도 땅콩 아이스크림을 파는 곳은 우도에 널리고 널렸는데 예전에 우도 땅콩이 아니라 중국산 땅콩을 쓰다가 논란이 된 집들도 있으니 주의하셔야 합니다.<br /><br />
+                        주소 : 제주특별자치도 제주시 우도면 우도해안길 912
+                    </p>
+                </div>
+            </div>
+            <hr />
+        </section>
+        <!-- Back To Top Button -->
+        <button type="button" class="btn btn-light btn-floating btn-lg" id="btn-back-to-top">
+            <i class="fa fa-chevron-up"></i>
+        </button>
+        <!-- Footer -->
+        <footer class="container">
+            <div class="text-center">
+                <p>&copy; 2021. 양은수 all rights reserved.</p>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+        <!-- Core famous JS-->
+        <script src="../js/scripts.js"></script>
+        <!-- Scroll Animation JS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <!-- Top Button JS -->
+        <script>
+            let mybutton = document.getElementById("btn-back-to-top");
+            window.onscroll = function () {
+                scrollFunction();
+            };
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+            mybutton.addEventListener("click", backToTop);
+            function backToTop() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+    </body>
+</html>

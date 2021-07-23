@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>중문 구석구석</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+        <!-- Icons -->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+            crossorigin="anonymous"
+        />
+        <!-- Core CSS (includes Bootstrap) -->
+        <link rel="stylesheet" href="../css/styles.css" />
+        <!-- Google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet" />
+        <!-- Kakao Map API -->
+        <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=68ce7983ece74c2b864b4154546d1976"></script>
+    </head>
+    <body class="pt-5">
+        <!-- Navigation-->
+        <header>
+            <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+                <div class="container">
+                    <a class="navbar-brand js-scroll-trigger" href="../index.html">INTRODUCE JEJU</a>
+                    <button
+                        class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarResponsive"
+                        aria-controls="navbarResponsive"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        Menu
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item mx-0 mx-lg-1">
+                                <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#attraction">Attraction</a>
+                            </li>
+                            <li class="nav-item mx-0 mx-lg-1">
+                                <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#food">Food</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Carousel -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../images/Jungmun/The_museum_is_alive.jpg" class="d-block w-100" alt="박물관은살아있다" />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>박물관은살아있다</h5>
+                        <p>살아있는 것 같은 박물관인 박물관은살아있다</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/Jungmun/Pacific_Resom_Marine_Stage.jpg" class="d-block w-100" alt="퍼시픽 리솜 마린스테이지" />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>퍼시픽 리솜 마린스테이지</h5>
+                        <p>다양한 동물들과 공연을 즐길 수 있는 퍼시픽 리솜 마린 스테이지</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/Jungmun/Yeomiji_Botanical_Garden.jpg" class="d-block w-100" alt="여미지식물원" />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>여미지식물원</h5>
+                        <p>제주 최대 식물원인 여미지식물원</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- Attraction Section -->
+        <section class="container section" id="attraction">
+            <div class="row" style="margin-top: 2em" data-aos="fade-left" data-aos-duration="1500">
+                <div class="col-12 col-sm-7 col-md-7 col-lg-7">
+                    <h2>박물관은살아있다</h2>
+                    <p class="fs-5">
+                        박물관은살아있다는 일반적인 전시를 하는 박물관이 아니라 착시아트, 미디어아트, 스컬쳐아트, 프로방스아트 등으로 구성되어 있는 눈으로 보는 착시현상을 현실로 상상이 되도록 하여
+                        관람객들이 함께 사진을 찍고 동참하는 박물관입니다.<br /><br />
+                        무슨 말인지 잘 아해 안 가시죠?<br /><br />
+                        오른쪽을 보시면 무슨 말인지 조금은 이해가 가실 거예요.<br /><br />
+                        저는 개인적으로 일반적인 박물관은 막 흥미가 있지 않았는데 이곳에서는 입체적인 작품을 볼 수 있으니깐 매우 흥미로웠습니다.<br /><br />
+                        평소에 박물관을 즐기지 않으시는 분들도 재미있게 즐길 수 있으니 추천드립니다.
+                    </p>
+                </div>
+                <div class="col-12 col-sm-5 col-md-5 col-lg-5">
+                    <img src="../images/Jungmun/The_museum_is_alive_divider.jpg" alt="박물관은살아있다" class="w-100 rounded my-3 mx-auto" />
+                </div>
+            </div>
+            <hr />
+            <div class="row" data-aos="fade-right" data-aos-duration="1500">
+                <div class="col-12 col-sm-5 col-md-5 col-lg-5">
+                    <img src="../images/Jungmun/Pacific_Resom_Marine_Stage_divider.jpg" alt="퍼시픽 리솜 마린스테이지" class="w-100 rounded my-3 mx-auto" />
+                </div>
+                <div class="col-12 col-sm-7 col-md-7 col-lg-7">
+                    <h2>퍼시픽 리솜 마린스테이지</h2>
+                    <p class="fs-5">
+                        중문 안에 있는 대표적인 실내 놀 거리인 퍼시픽 리솜에서 마린스테이지라는 공연에 대해 소개해드리겠습니다.<br /><br />
+                        마린스테이지는 합리적인 가격에 여러 동물들을 만나볼 수 있습니다.<br /><br />
+                        참고로 11시, 13시 30분, 15시 30분 총 하루에 세 번 진행되니 참고하여주시길 바랍니다.<br /><br />
+                        그리고 이 공연에는 돌고래만 나오는 것이 아니라 원숭이도 나오는데 원숭이가 이 공연과 매우 잘 어울립니다.<br /><br />
+                        또한 바다사자랑도 악수할 수 있는 기회가 있으니 어린 친구들과 같이 가도 좋습니다.
+                    </p>
+                </div>
+            </div>
+            <hr />
+            <div class="row" data-aos="fade-left" data-aos-duration="1500">
+                <div class="col-12 col-sm-7 col-md-7 col-lg-7">
+                    <h2>여미지식물원</h2>
+                    <p class="fs-5">
+                        여미지식물원은 제주도를 대표하는 식물원입니다.<br /><br />
+                        많은 식물을 자랑하는데 옥외 식물은 1000여 종이 있고 온실식물은 1300여 종이 있다고 합니다.<br /><br />
+                        식물원이 굉장히 넓어서 다리가 아플 수 있는데 옥외정원을 투어하는 버스가 있으니 타시는 걸 강력 추천드립니다.<br /><br />
+                        그리고 사진에서 보이는 것처럼 가운데 높은기둥이 있는 곳이 전망대인데 거기서 아래를 내려다보면 어디가 어디인지도 대충 파악할 수 있고 위에서 보는 식물원이 신기하면서도 색다른
+                        기분을 선사해 줍니다.<br /><br />
+                        온실식물만 해도 볼거리가 넘치니 비 올 때도 강력 추천합니다.
+                    </p>
+                </div>
+                <div class="col-12 col-sm-5 col-md-5 col-lg-5">
+                    <img src="../images/Jungmun/Yeomiji_Botanical_Garden_divider.jpg" alt="여미지식물원" class="w-100 rounded my-3 mx-auto" />
+                </div>
+            </div>
+        </section>
+        <!-- Food Section -->
+        <section class="container section" id="food">
+            <hr />
+            <div class="row" data-aos="fade-right" data-aos-duration="1500">
+                <div class="col-12 col-sm-5 col-md-5 col-lg-5">
+                    <img src="../images/Jungmun/Yeondon_divider.jpg" alt="연돈" class="w-100 rounded my-3 mx-auto" />
+                </div>
+                <div class="col-12 col-sm-7 col-md-7 col-lg-7">
+                    <h2>연돈</h2>
+                    <p class="fs-5">
+                        연돈은 백종원의 골목식당에 나오면서 더욱 유명해진 식당입니다.<br /><br />
+                        우선 저는 이걸 먹기 위해서 가게 앞에서 17시간 동안 텐트를 치고 기다리다 먹었습니다.<br /><br />
+                        장인이 무엇인가도 깨달을 수 있고 기다리는 동안 같이 간 일행들이랑 추억도 쌓을 수 있기 때문에 일석이조라고 생각합니다.<br /><br />
+                        그리고 개인적으로 치즈돈가스보다 등심 돈가스를 추천드리고 카레는 추가로 더 주문할 수 있으니 최대한 많이 드시기를 추천드립니다.<br /><br />
+                        그 가격대에서 절대로 맛볼 수 없는 돈가스이므로 강력 추천드립니다.<br /><br />
+                        주소 : 제주특별자치도 서귀포시 일주서로 968-10 1층
+                    </p>
+                </div>
+            </div>
+            <hr />
+        </section>
+        <!-- Back To Top Button -->
+        <button type="button" class="btn btn-light btn-floating btn-lg" id="btn-back-to-top">
+            <i class="fa fa-chevron-up"></i>
+        </button>
+        <!-- Footer -->
+        <footer class="container">
+            <div class="text-center">
+                <p>&copy; 2021. 양은수 all rights reserved.</p>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+        <!-- Core famous JS-->
+        <script src="../js/scripts.js"></script>
+        <!-- Scroll Animation JS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <!-- Top Button JS -->
+        <script>
+            let mybutton = document.getElementById("btn-back-to-top");
+            window.onscroll = function () {
+                scrollFunction();
+            };
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+            mybutton.addEventListener("click", backToTop);
+            function backToTop() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+    </body>
+</html>

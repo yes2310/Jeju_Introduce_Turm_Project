@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>한경면 구석구석</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+        <!-- Icons -->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+            crossorigin="anonymous"
+        />
+        <!-- Core CSS (includes Bootstrap) -->
+        <link rel="stylesheet" href="../css/styles.css" />
+        <!-- Google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet" />
+        <!-- Kakao Map API -->
+        <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=68ce7983ece74c2b864b4154546d1976"></script>
+    </head>
+    <body class="pt-5">
+        <!-- Navigation-->
+        <header>
+            <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+                <div class="container">
+                    <a class="navbar-brand js-scroll-trigger" href="../index.html">INTRODUCE JEJU</a>
+                    <button
+                        class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarResponsive"
+                        aria-controls="navbarResponsive"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        Menu
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item mx-0 mx-lg-1">
+                                <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#attraction">Attraction</a>
+                            </li>
+                            <li class="nav-item mx-0 mx-lg-1">
+                                <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#food">Food</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Carousel -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../images/Hangyeong-myeon/Shinchang_Windmill_Coastal_Road.jpg" class="d-block w-100" alt="신창풍차해안도로" />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>신창풍차해안도로</h5>
+                        <p>제주도의 대표 해안도로인 신창풍차해안도로</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/Hangyeong-myeon/Suwolbong.jpg" class="d-block w-100" alt="수월봉" />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>수월봉</h5>
+                        <p>사연을 듣고 보면 더욱 감동적인 수월봉</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/Hangyeong-myeon/Glass_Castle.jpg" class="d-block w-100" alt="제주 유리의성" />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>제주 유리의성</h5>
+                        <p>세계적인 유리가 한곳에 모인 제주 유리의성</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- Attraction Section -->
+        <section class="container section" id="attraction">
+            <div class="row" style="margin-top: 2em" data-aos="fade-left" data-aos-duration="1500">
+                <div class="col-12 col-sm-7 col-md-7 col-lg-7">
+                    <h2>신창풍차해안도로</h2>
+                    <p class="fs-5">
+                        제주도에서 가장 유명한 드라이브 코스로 뽑히는 신창풍차해안도로에 대해서 소개해드리겠습니다.<br /><br />
+                        신창풍차해안도로는 자동차를 타고 옆으로 지나가도 여러 풍차와 또 그것들과 어울리는 바다와의 조화를 보고 감탄할 수 있는 곳입니다.<br /><br />
+                        여기는 자동차 말고도 내려서 구경할 수 있게 산책로가 잘 되어있는데 내려서 풍차를 보면 풍차의 웅장함을 느낄 수 있습니다.<br /><br />
+                        또한 여기서 낚시하는 사람들도 많으니 기회가 된다면 낚시도 도전해보시길 추천드립니다.<br /><br />
+                        참고로 풍차가 돌아갈 정도로 바람이 세니 바람막이 같은 여벌옷을 준비하시는 걸 추천드립니다.
+                    </p>
+                </div>
+                <div class="col-12 col-sm-5 col-md-5 col-lg-5">
+                    <img src="../images/Hangyeong-myeon/Shinchang_Windmill_Coastal_Road_divider.jpg" alt="신창풍차해안도로" class="w-100 rounded my-3 mx-auto" />
+                </div>
+            </div>
+            <hr />
+            <div class="row" data-aos="fade-right" data-aos-duration="1500">
+                <div class="col-12 col-sm-5 col-md-5 col-lg-5">
+                    <img src="../images/Hangyeong-myeon/Suwolbong_divider.jpg" alt="수월봉" class="w-100 rounded my-3 mx-auto" />
+                </div>
+                <div class="col-12 col-sm-7 col-md-7 col-lg-7">
+                    <h2>수월봉</h2>
+                    <p class="fs-5">
+                        제주도 현지인에게 바람의 언덕이라고 불리는 수월봉에 대해서 소개해드리겠습니다.<br /><br />
+                        수월봉에서는 해안 절경부터 섬과 오름의 모습까지 한데 어울리는 풍경을 만나볼 수 있습니다.<br /><br />
+                        산책로를 따라 분포되어 있는 화산쇄설층을 볼 수 있습니다.<br /><br />
+                        수월봉의 이름에는 안타까운 사연이 있는데 수월히 가 어버니의 병을 고치기 위해 약초를 구하다가 마지막 한 가지 약초를 남기고 절벽에서 떨어 서서 수월봉으로 부르게 되었다고
+                        합니다.<br /><br />
+                        이러한 사연을 생각하면서 구경하시면 더욱 감동스러울 겁니다.
+                    </p>
+                </div>
+            </div>
+            <hr />
+            <div class="row" data-aos="fade-left" data-aos-duration="1500">
+                <div class="col-12 col-sm-7 col-md-7 col-lg-7">
+                    <h2>제주 유리의성</h2>
+                    <p class="fs-5">
+                        국내 최고 유리 전문 박물관이면서 테마파크인 제주 유리의 성에 대해서 소개해드리겠습니다.<br /><br />
+                        우선 전시장에 들어가면 거대한 콩나무가 눈을 사로잡고 콩나무 뒤로 나가면 공원이 나옵니다.<br /><br />
+                        산책을 하듯 시원한 제주 공기를 마시면서 쭉 들어가다 보면 개울을 따라 핀 유리 들꽃을 볼 수 있는데 마치 찰리와 초콜릿 공장의 유리 버전을 보고 있는듯한 느낌을 받을 수 있습니다.<br /><br />
+                        또한 박물관답게 유리의 역사, 작품 등에 대한 소개도 잘 되어있습니다.<br /><br />
+                        세계적으로 유명한 유리 작품들도 있으니 꼭 가보시길 바랍니다.
+                    </p>
+                </div>
+                <div class="col-12 col-sm-5 col-md-5 col-lg-5">
+                    <img src="../images/Hangyeong-myeon/Glass_Castle_divider.jpg" alt="제주 유리의성" class="w-100 rounded my-3 mx-auto" />
+                </div>
+            </div>
+        </section>
+        <!-- Food Section -->
+        <section class="container section" id="food">
+            <hr />
+            <div class="row" data-aos="fade-right" data-aos-duration="1500">
+                <div class="col-12 col-sm-5 col-md-5 col-lg-5">
+                    <img src="../images/Hangyeong-myeon/Beyond_the_stone_wall_divider.jpg" alt="돌담너머바다" class="w-100 rounded my-3 mx-auto" />
+                </div>
+                <div class="col-12 col-sm-7 col-md-7 col-lg-7">
+                    <h2>돌담너머바다</h2>
+                    <p class="fs-5">
+                        돌담너머바다는 이탈리안 음식집입니다.<br /><br />
+                        대표 메뉴로는 돔베 스테이크, 판포리 문어 스파게티, 전복 게우 크림 리조또 등이 있습니다.<br /><br />
+                        전복 게우 크림 리조또는 전복을 전복죽 말고 다르게 즐길 수 있다는 걸 알려줍니다.<br /><br />
+                        판포리 문어 스파게티는 한정 메뉴인데 제주도 자연산 문어의 맛을 느낄 수 있습니다.<br /><br />
+                        개인적으로 전복 게우 크림 리조또를 추천드립니다.<br /><br />
+                        주소 : 제주특별자치도 제주시 한경면 일주서로 4533-19
+                    </p>
+                </div>
+            </div>
+            <hr />
+        </section>
+        <!-- Back To Top Button -->
+        <button type="button" class="btn btn-light btn-floating btn-lg" id="btn-back-to-top">
+            <i class="fa fa-chevron-up"></i>
+        </button>
+        <!-- Footer -->
+        <footer class="container">
+            <div class="text-center">
+                <p>&copy; 2021. 양은수 all rights reserved.</p>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+        <!-- Core famous JS-->
+        <script src="../js/scripts.js"></script>
+        <!-- Scroll Animation JS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <!-- Top Button JS -->
+        <script>
+            let mybutton = document.getElementById("btn-back-to-top");
+            window.onscroll = function () {
+                scrollFunction();
+            };
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+            mybutton.addEventListener("click", backToTop);
+            function backToTop() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+    </body>
+</html>

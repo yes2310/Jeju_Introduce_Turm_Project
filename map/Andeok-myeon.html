@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>안덕면 구석구석</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+        <!-- Icons -->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+            crossorigin="anonymous"
+        />
+        <!-- Core CSS (includes Bootstrap) -->
+        <link rel="stylesheet" href="../css/styles.css" />
+        <!-- Google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet" />
+        <!-- Kakao Map API -->
+        <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=68ce7983ece74c2b864b4154546d1976"></script>
+    </head>
+    <body class="pt-5">
+        <!-- Navigation-->
+        <header>
+            <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+                <div class="container">
+                    <a class="navbar-brand js-scroll-trigger" href="../index.html">INTRODUCE JEJU</a>
+                    <button
+                        class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarResponsive"
+                        aria-controls="navbarResponsive"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        Menu
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item mx-0 mx-lg-1">
+                                <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#attraction">Attraction</a>
+                            </li>
+                            <li class="nav-item mx-0 mx-lg-1">
+                                <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#food">Food</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Carousel -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../images/Andeok-myeon/Dragon_Head_Coast.jpg" class="d-block w-100" alt="용머리해안" />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>용머리해안</h5>
+                        <p>용의 머리 그 자체인 용머리해안</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/Andeok-myeon/Jumbo_Village.jpg" class="d-block w-100" alt="점보빌리지" />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>점보빌리지</h5>
+                        <p>제주에서 코끼리를 볼 수 있는 점보빌리지</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/Andeok-myeon/Hello_Kitty_Island.jpg" class="d-block w-100" alt="헬로키티아일랜드" />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>헬로키티아일랜드</h5>
+                        <p>헬로키티 덕후들은 꼭 가봐야 되는 헬로키티아일랜드</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- Attraction Section -->
+        <section class="container section" id="attraction">
+            <div class="row" style="margin-top: 2em" data-aos="fade-left" data-aos-duration="1500">
+                <div class="col-12 col-sm-7 col-md-7 col-lg-7">
+                    <h2>용머리해안</h2>
+                    <p class="fs-5">
+                        용머리해안은 용이 머리를 들고 바다로 들어가는 자세를 닮았다고 해서 붙여진 이름입니다.<br /><br />
+                        우선 용머리해안은 매일 볼 수 있는 곳이 아니라 기상이 좋을 때만 볼 수 있습니다.<br /><br />
+                        용머리해안의 산책로를 따라가다 보면 오랜 세월 동안 겹겹이 쌓인 사암층 암벽을 볼 수 있습니다.<br /><br />
+                        그리고 용머리해안의 바다가 정말 예쁘기 때문에 바다만 보러 가셔도 만족하실 겁니다.<br /><br />
+                        그리고 곳곳에 해녀분이 해산물을 팔고 계시고 구매하면 즉석에서 회를 떠주십니다.
+                    </p>
+                </div>
+                <div class="col-12 col-sm-5 col-md-5 col-lg-5">
+                    <img src="../images/Andeok-myeon/Dragon_Head_Coast_divider.jpg" alt="용머리해안" class="w-100 rounded my-3 mx-auto" />
+                </div>
+            </div>
+            <hr />
+            <div class="row" data-aos="fade-right" data-aos-duration="1500">
+                <div class="col-12 col-sm-5 col-md-5 col-lg-5">
+                    <img src="../images/Andeok-myeon/Jumbo_Village_divider.jpg" alt="점보빌리지" class="w-100 rounded my-3 mx-auto" />
+                </div>
+                <div class="col-12 col-sm-7 col-md-7 col-lg-7">
+                    <h2>점보빌리지</h2>
+                    <p class="fs-5">
+                        점보빌리지에서는 우리나라에서는 평상시에 보기 힘든 코끼리, 공연을 하는 모습까지 볼 수 있습니다.<br /><br />
+                        공연은 동남아에서 온 현지 조련사가 직접 진행하며 코끼리가 얼마나 똑똑한 동물인지 실감할 수 있는 시간을 가질 수 있습니다.<br /><br />
+                        또한 코끼리 안마, 코끼리에게 먹이주기 등 동물과 교감할 수 있는 있어 코끼리에 대해서 더 알아갈 수 있습니다.<br /><br />
+                        점보빌리지는 매우 넓기 때문에 단체관람으로도 좋고 가족단위나 개인이 가도 만족하실 겁니다.<br /><br />
+                        공연은 하루에 3번만 진행되므로 주의해서 방문하시길 바랍니다.
+                    </p>
+                </div>
+            </div>
+            <hr />
+            <div class="row" data-aos="fade-left" data-aos-duration="1500">
+                <div class="col-12 col-sm-7 col-md-7 col-lg-7">
+                    <h2>헬로키티아일랜드</h2>
+                    <p class="fs-5">
+                        헬로키티 덕후들을 위한 헬로키티아일랜드에 대해서 소개해드리겠습니다.<br /><br />
+                        헬로키티아일랜드는 총 3층으로 구성되어 있고 1층으로 들어가자마자 어마어마한 헬로키티 탑이 반겨주는 것을 볼 수 있습니다.<br /><br />
+                        헬로키티의 역사에 대해서도 알 수 있고 헬로키티와 콜라보 한 의상도 볼 수 있는데 헬로키티와 콜라보 한 한복이 눈에 띄었습니다.<br /><br />
+                        그리고 무료로 제공되는 도안에 색칠해보는 체험도 있는데 이건 무료로 진행 가능하니 해보시길 추천드립니다.<br /><br />
+                        딸아이가 있다면 무조건 가보시는 걸 추천드립니다.
+                    </p>
+                </div>
+                <div class="col-12 col-sm-5 col-md-5 col-lg-5">
+                    <img src="../images/Andeok-myeon/Hello_Kitty_Island_divider.jpg" alt="헬로키티아일랜드" class="w-100 rounded my-3 mx-auto" />
+                </div>
+            </div>
+        </section>
+        <!-- Food Section -->
+        <section class="container section" id="food">
+            <hr />
+            <div class="row" data-aos="fade-right" data-aos-duration="1500">
+                <div class="col-12 col-sm-5 col-md-5 col-lg-5">
+                    <img src="../images/Andeok-myeon/Sobong_Restaurant.jpg" alt="소봉식당" class="w-100 rounded my-3 mx-auto" />
+                </div>
+                <div class="col-12 col-sm-7 col-md-7 col-lg-7">
+                    <h2>소봉식당</h2>
+                    <p class="fs-5">
+                        일본 가정식 식당인 소봉식당에 대해서 소개해드리겠습니다.<br /><br />
+                        이 집은 바로 앞에 산방산 뷰를 보면서 식사를 할 수 있습니다.<br /><br />
+                        이 집은 얼핏 보면 가격이 있는 집이구나 할 수 있는데 먹어보면 이해가 가는 가격입니다.<br /><br />
+                        개인적으로 "오늘의 정식"이라는 메뉴를 추천드리는데 매일 구성이 바뀌기 때문에 재밌게 먹을 수 있습니다.<br /><br />
+                        분위기가 좋아서 사진 찍기도 좋고 맛도 좋으니 추천드립니다.<br /><br />
+                        주소 : 제주특별자치도 서귀포시 안덕면 사계로 191
+                    </p>
+                </div>
+            </div>
+            <hr />
+        </section>
+        <!-- Back To Top Button -->
+        <button type="button" class="btn btn-light btn-floating btn-lg" id="btn-back-to-top">
+            <i class="fa fa-chevron-up"></i>
+        </button>
+        <!-- Footer -->
+        <footer class="container">
+            <div class="text-center">
+                <p>&copy; 2021. 양은수 all rights reserved.</p>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+        <!-- Core famous JS-->
+        <script src="../js/scripts.js"></script>
+        <!-- Scroll Animation JS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <!-- Top Button JS -->
+        <script>
+            let mybutton = document.getElementById("btn-back-to-top");
+            window.onscroll = function () {
+                scrollFunction();
+            };
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+            mybutton.addEventListener("click", backToTop);
+            function backToTop() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+    </body>
+</html>
